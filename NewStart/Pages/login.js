@@ -16,7 +16,6 @@ export async function loginNext(){
         const Check = await frame2.$(CHECKBOX);
         await Check.click();
         const Submit = await frame2.$(LOGIN_BTN);
-       //await page.screenshot({path:'screen2.png', fullPage: true});
         await Submit.click();
         //await page.screenshot({path:'screen3.png', fullPage: true});
     }

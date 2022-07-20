@@ -15,7 +15,6 @@ export async function search(){
     await page.click(SEARCH_BTN);
 }
 export async function newcustomer(){
-            //await page.screenshot({path:'screen5.png', fullPage: true});
             await page.waitForSelector(CREATE_NEW_SKY_CUS);
             await page.click(CREATE_NEW_SKY_CUS);
             await page.hover(SKY_GLASS_CUS);
@@ -26,8 +25,5 @@ export async function newcustomer(){
             await CONTACT_DPD.selectOption({ value: 'email' });
             await page.hover('text="ROI"');
             await page.click('text="ROI"');
-            //await page.screenshot({path:'screen6.png', fullPage: true});
-           // await radio.click();
             await page.click(COUNTINUE_BTN);
-            //await page.screenshot({path:'screen7.png', fullPage: true});
 }

@@ -18,31 +18,8 @@ const CONFIRM_ADD_BTN='[id="confirm-customer-address-button"]';
 const SLOT='[id="slot-0-0"]';
 const PAYMENT_BTN='[id="basket-bar-consent-button"]';
 const TITLE_BOX='[data-testid="select-title-field"]';
-// const page_title='[id="marketing-preferences-information-column"]'
-// const TITLE='[class^="css-"] '
-    
 
 export async function form_fill(){
-        // const displayedArray = await page.$$(TITLE);
-        // assert.isArray(displayedArray, 'array of visit event title displayed');
-        // const requiredRow = await generic.searchArrayForRequiredElement(displayedArray, 'Marketing Preferences');
-        // assert.isOk(requiredRow, this.REQUIRE_ROW);
-        // const innerText = await requiredRow.innerText();
-        // assert.include(innerText, 'Marketing Preferences', 'Expected title  not seen');
-  //  const pageTitle=await page.waitForSelector(page_title);
-    //assert.isTrue()
-    
-    // const click = await page.check(MARKETING_RADIO);
-    // assert.isTrue(click,'click is not done');
-    //await page.waitForSelector(PRE_NAME);
-    //await page.click(PRE_NAME);//
-    // await page.selectOption('[aria-label="rows per page"]', '-1');
-    //const PreName = await page.$(PRE_NAME);
-    //await page.selectOption({ value: 'MR' });
-    // const SelectTitleIsVisible = await page.isVisible(TITLE_BOX);
-    // assert.isTrue(SelectTitleIsVisible, 'Title is not visible');
-    // const selectTitle = await page.selectOption(PRE_NAME, { index: 0 });
-    // assert.isArray(selectTitle, 'Ttile is selected from the array list');
     await page.waitForSelector(MARKETING_RADIO);
     await page.click(MARKETING_RADIO);
     await page.waitForTimeout(2000);
@@ -64,9 +41,6 @@ export async function form_fill(){
     await page.keyboard.press('Tab');
     await page.waitForTimeout(1000);
     await page.keyboard.press('Enter');
-
-   // await page.waitForSelector(CONFIRM_ADDRESS);
-    // await page.click(CONFIRM_ADDRESS);
     await page.waitForSelector(CONFIRM_ADD_BTN);
     await page.click(CONFIRM_ADD_BTN);
     await page.waitForTimeout(2000);
