@@ -1,0 +1,68 @@
+{
+    "name": "sky123",
+    "version": "1.0.0",
+    "description": "Automation Framework ",
+    "scripts": {
+      "test": "npm run format; npm run compile; npm run test-jest",
+      "test-jest": "jest -c ./jest.playwright.config.js",
+      "compile": "tsc",
+      "lint": "eslint . --ext .js --ext .ts",
+      "format": "npm run lint -- --fix"
+    },
+    "engines": {
+      "node": ">=16.10.0"
+    },
+    "engineStrict": true,
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/Thomas0716/Wavelength"
+    },
+  
+    "homepage": "https://github.com/Thomas0716/Wavelength",
+    "keywords": [],
+    "author": "Thomas",
+    "license": "ISC",
+    "devDependencies": {
+      "@babel/preset-env": "^7.16.11",
+      "@babel/preset-typescript": "^7.16.7",
+      "@playwright/test": "1.18",
+      "@reportportal/agent-js-jest": "^5.0.3",
+      "@sky-uk/eslint-config-sky-typescript": "33.3.0",
+      "@tsconfig/node16": "^1.0.2",
+      "@types/async-retry": "^1.4.3",
+      "@types/chai": "^4.2.22",
+      "@types/jest": "^27.4.1",
+      "@types/mocha": "^9.1.0",
+      "@types/set-cookie-parser": "^2.4.2",
+      "@types/supertest": "^2.0.11",
+      "@types/xml2js": "^0.4.9",
+      "async-retry": "^1.3.3",
+      "babel-eslint": "^10.0.3",
+      "chai": "3.5.0",
+      "cli-color": "2.0.0",
+      "eslint": "^7.32.0",
+      "eslint-plugin-jest": "^26.1.1",
+      "eslint-plugin-playwright": "^0.6.0",
+      "form-urlencoded": "^6.0.6",
+      "jest": "^27.2.4",
+      "jest-cucumber": "^3.0.1",
+      "jest-environment-node": "^27.2.4",
+      "jest-html-reporters": "^3.0.5",
+      "jest-playwright-preset": "^1.7.0",
+      "jest-runner": "^27.2.4",
+      "mocha": "8.3.2",
+      "playwright": "1.18",
+      "playwright-test": "7.1.0",
+      "retry": "^0.12.0",
+      "set-cookie-parser": "^2.4.8",
+      "supertest": "^6.2.2",
+      "xml2js": "^0.4.23"
+    },
+    "dependencies": {
+      "dotenv": "^16.0.0",
+      "format": "^0.2.2",
+      "run": "^1.4.0",
+      "ts-jest": "^27.0.7",
+      "typescript": "4.4.4"
+    }
+  }
