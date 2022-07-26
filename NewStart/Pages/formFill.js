@@ -29,13 +29,13 @@ export async function form_fill(){
     await PreName.selectOption({ value: 'MR' });
     await page.fill(FORE_NAME, 'sandwich');
     await page.fill(FAMILY_NAME, 'xyz');
-    await page.fill(EMAIL_ADD, 'sandwichtest123@sky.uk');
-    await page.fill(CONFIRM_EMAIL_ADD,'sandwichtest123@sky.uk');
-    await page.fill(MOBILE_NO, '0878768678');
+    await page.fill(EMAIL_ADD, 'sandwichtest111@sky.uk');
+    await page.fill(CONFIRM_EMAIL_ADD,'sandwichtest111@sky.uk');
+    await page.fill(MOBILE_NO, '07587578573');
     await page.fill(DATE, '01');
     await page.fill(MONTH, '01');
     await page.fill(YEAR, '2000');
-    await page.fill(POST_CODE, 'D08A006');
+    await page.fill(POST_CODE, 'EH88BA');
     await page.click(SEARCH_ADD_BTN);
     await page.waitForTimeout(2000);
     await page.keyboard.press('Tab');

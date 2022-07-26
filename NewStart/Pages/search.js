@@ -23,7 +23,7 @@ export async function newcustomer(){
             await page.click(CONTACT_TYPE);
             const CONTACT_DPD = await page.$(CONTACT_TYPE);
             await CONTACT_DPD.selectOption({ value: 'email' });
-            await page.hover('text="ROI"');
-            await page.click('text="ROI"');
+            await page.hover('text="UK"');
+            await page.click('text="UK"');
             await page.click(COUNTINUE_BTN);
 }

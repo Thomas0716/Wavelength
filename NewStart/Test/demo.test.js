@@ -5,6 +5,7 @@
  const glassCheckoutWave=require('../Pages/skyGlassCheckout');
  const formWave=require('../Pages/formFill');
  const consentWave=require('../Pages/payment');
+ import { assert, expect } from 'chai';
  
 // const loginWave=require('../Pages/login_1');
 // const iSearch =require('./Pages/search');
@@ -21,6 +22,7 @@ describe('Sky App test', () => {
   it('Search test', async () => {
     await searchWave.search();
     await searchWave.newcustomer();
+  
     await page.waitForTimeout(5000);
   });
   it('Sky Glass Select test', async () => {

@@ -40,7 +40,7 @@ export async function CardPayment(){
   await page.frameLocator('#payment-iframe-node').frameLocator('[data-testid="capture-payment-details-module"]').locator('[data-testid="paymentAuthSecurityCodeInput"]').click();
 
   // Fill [data-testid="paymentAuthSecurityCodeInput"]
-  await page.frameLocator('#payment-iframe-node').frameLocator('[data-testid="capture-payment-details-module"]').locator('[data-testid="paymentAuthSecurityCodeInput"]').fill('987');
+  await page.frameLocator('#payment-iframe-node').frameLocator('[data-testid="capture-payment-details-module"]').locator('[data-testid="paymentAuthSecurityCodeInput"]').fill('123');
 
   // Press Tab
   await page.frameLocator('#payment-iframe-node').frameLocator('[data-testid="capture-payment-details-module"]').locator('[data-testid="paymentAuthSecurityCodeInput"]').press('Tab');
